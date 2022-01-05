@@ -44,7 +44,7 @@ public class ThreadDemo {
 
         @Override
         public void run() {
-            System.out.println("当前线程 id: " + Thread.currentThread().getId());
+            System.out.println("进入 MyThread: 当前线程 id: " + Thread.currentThread().getId());
         }
     }
 
@@ -57,7 +57,7 @@ public class ThreadDemo {
 
         @Override
         public void run() {
-            System.out.println("当前线程 id: " + Thread.currentThread().getId());
+            System.out.println("进入 RunnableTask: 当前线程 id: " + Thread.currentThread().getId());
         }
     }
 
@@ -70,7 +70,7 @@ public class ThreadDemo {
 
         @Override
         public String call() {
-            return String.valueOf(Thread.currentThread().getId());
+            return String.valueOf("CallableTask: "+Thread.currentThread().getId());
         }
     }
 }
