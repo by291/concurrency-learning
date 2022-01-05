@@ -27,7 +27,7 @@ public class ThreadDemo {
         FutureTask<String> futureTask = new FutureTask<>(new CallableTask());
         new Thread(futureTask).start();
         try {
-            // 阻塞知道获取到结果
+            // 阻塞直到获取到结果
             String result = futureTask.get();
             System.out.println("当前线程 id: " + result);
         } catch (ExecutionException | InterruptedException e) {
