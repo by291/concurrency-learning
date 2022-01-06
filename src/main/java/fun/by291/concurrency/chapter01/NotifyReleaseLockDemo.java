@@ -7,7 +7,7 @@ package fun.by291.concurrency.chapter01;
  * <b>notify() 释放锁的时机是在对应 synchronized 块结束的地方</b>
  * @author Bystander
  */
-public class NotifyDemo {
+public class NotifyReleaseLockDemo {
     // 模拟共享资源
     private static final Object resource = new Object();
 
