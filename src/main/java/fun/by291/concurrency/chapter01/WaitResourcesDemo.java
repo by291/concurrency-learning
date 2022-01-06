@@ -68,6 +68,6 @@ public class WaitResourcesDemo {
         threadB.join();
 
         // 永远无法到达
-        System.out.println("main over");
+        System.out.println("运行结束");
     }
 }
