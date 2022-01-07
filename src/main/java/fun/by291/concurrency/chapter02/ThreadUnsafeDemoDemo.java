@@ -8,7 +8,7 @@ package fun.by291.concurrency.chapter02;
  *
  * @see package-info.java
  */
-public class ThreadUnsafeIntegerDemo {
+public class ThreadUnsafeDemoDemo {
     private int value;
 
     public int getValue() {
