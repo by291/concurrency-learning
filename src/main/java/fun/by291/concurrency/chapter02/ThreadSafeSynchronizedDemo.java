@@ -5,6 +5,7 @@ package fun.by291.concurrency.chapter02;
  * <p><b>注意：synchronized 关键字能保证同一时刻只有一个线程能操作这个实例</b></p>
  * <p>进入 synchronized 块就会刷新线程的工作内存，从而保证是从主内存读取到最新值，退出
  * synchronized 块会将 synchronized 块内对共享变量的修改刷新到主内存</p>
+ * <p><b>synchronized 即保证了内存可见性，也保证了操作的原子性</b></p>
  * <p>synchronized 时独占锁，会大大降低并发性</p>
  *
  * @author Bystander
