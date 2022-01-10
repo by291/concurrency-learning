@@ -21,6 +21,7 @@ public class UnsafeDemo {
 
     static {
         try {
+            // 通过反射绕过检测，获取 unsafe 实例
             Field field = Unsafe.class.getDeclaredField("theUnsafe");
             field.setAccessible(true);
             unsafe = (Unsafe) field.get(null);
